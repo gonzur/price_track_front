@@ -1,0 +1,27 @@
+<mat-card>  
+
+  <mat-card-header>
+    <form (submit)="pullItemsByQuery();">
+      <div name="items contained in row fashion">
+
+        <mat-form-field appearance="outline">
+          <input matInput formControlName="searchQuery" placeholder="Search for">
+        </mat-form-field>
+
+        <mat-form-field>
+          <button matInput type="submit">Submit</button>
+        </mat-form-field>
+
+      </div>
+    </form>
+  </mat-card-header>
+
+  <mat-card-content>
+    <div name="divet inwards to fill in items make child scrollable">
+      <app-item-info-collection [itemCollection]="itemCategoryCollection" >
+
+      </app-item-info-collection>
+    </div>
+  </mat-card-content>
+
+</mat-card>

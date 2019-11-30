@@ -1,0 +1,12 @@
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      {{itemCollection.title}}
+    </mat-panel-title>
+    <mat-panel-description>
+      Average Price: {{itemCollection.avgPrice}}
+      Average Shipping: {{itemCollection.avgShippingPrice}}
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  <app-item-info-card name="incapsulate this in a scrollable" *ngFor="let item of itemCollection" [item]="item"></app-item-info-card>
+</mat-expansion-panel>

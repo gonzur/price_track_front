@@ -1,0 +1,14 @@
+.search-cnt {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.search-bar {
+  flex-grow: 9;
+}
+
+.search-btn-cnt {
+  flex-grow: 1;
+}
