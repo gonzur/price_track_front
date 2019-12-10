@@ -18,6 +18,7 @@ import { SearchPageComponent } from './components/search-page/search-page.compon
 import { SearhResultComponent } from './components/searh-result/searh-result.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input'
+import {ScrollingModule} from '@angular/cdk/scrolling'; 
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { MatInputModule } from '@angular/material/input'
     SearhResultComponent
   ],
   imports: [
-    
+    ScrollingModule,
     MatInputModule,
     MatFormFieldModule,
     MatListModule,
@@ -39,8 +40,8 @@ import { MatInputModule } from '@angular/material/input'
     MatButtonModule,
     MatIconModule,
     MatToolbarModule,
-    HeaderComponent,
-    FooterComponent,
+//    HeaderComponent,
+//    FooterComponent,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule

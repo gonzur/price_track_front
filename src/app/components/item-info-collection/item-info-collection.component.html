@@ -7,6 +7,10 @@
       Average Price: {{itemCollection.avgPrice}}
       Average Shipping: {{itemCollection.avgShippingPrice}}
     </mat-panel-description>
-  </mat-expansion-panel-header>
-  <app-item-info-card name="incapsulate this in a scrollable" *ngFor="let item of itemCollection" [item]="item"></app-item-info-card>
+  </mat-expansion-panel-header> 
+  <cdk-virtual-scroll-viewport style="height:400px; width:inherit;" itemSize="itemCollection.length">
+    <mat-nav-list>
+      <app-item-info-card name="incapsulate this in a scrollable" *cdkVirtualFor="let item of itemCollection.FacsimilieList" [item]="item"></app-item-info-card>
+    </mat-nav-list>
+  </cdk-virtual-scroll-viewport>
 </mat-expansion-panel>

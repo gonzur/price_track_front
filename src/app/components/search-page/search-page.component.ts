@@ -9,17 +9,18 @@ import { SearchCollection } from '../../auxillary/SearchCollecion';
 })
 export class SearchPageComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
+    this.itemCategoryCollection = new SearchCollection(10);
+  }
 
   searchQuery = new FormControl('');
-  itemCategoryCollection: SearchCollection = null;
+  itemCategoryCollection: SearchCollection;
 
   ngOnInit() {
-
   }
 
   pullItemsByQuery() {
-    this.searchQuery.value;
+    window.open("https://www.google.com");
     /* Placeholder function. Here we call our service to retrieve our data then
      * fill out our variable wich angular uses to pass data to the daughter
      * components. Allowing it to display the item groups. 
